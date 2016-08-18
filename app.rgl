@@ -1,0 +1,42 @@
+<template>
+	<div class="wrapper">
+		<img src="{ logo }" alt="logo">
+		Regularjs is awesome
+		<Button on-clicked="{ this.onGetStarted() }">Get Started</Button>
+	</div>
+</template>
+
+<script>
+	import Button from './button';
+	import logo from './logo.png';
+
+	export default {
+		components: {
+			'Button': Button,
+		},
+		config() {
+			this.data.logo = logo;
+		},
+		onGetStarted() {
+			location.href = 'http://regularjs.github.io/guide/';
+		}
+	}
+</script>
+
+<style lang="less">
+	html {
+		background-color: #F2F2F2;
+	}
+</style>
+
+<style lang="less" scoped>
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 20px;
+		}
+	}
+</style>

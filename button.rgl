@@ -1,0 +1,16 @@
+<template>
+	<button on-click="{ this.onClick() }">
+		{#inc this.$body}
+	</button>
+</template>
+
+<script>
+	import Regular from 'regularjs';
+
+	// you can also export Component Constructor here
+	export default Regular.extend({
+		onClick() {
+			this.$emit( 'clicked' );
+		}
+	});
+</script>
