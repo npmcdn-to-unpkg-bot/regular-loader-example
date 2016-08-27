@@ -7,7 +7,8 @@ module.exports = {
 	devtool: 'source-map',
 	output: {
 		path: './dist',
-		filename: 'app.js'
+		filename: 'app.js',
+		publicPath: './dist/'
 	},
 	module: {
 		loaders: [

@@ -13,6 +13,6 @@ $ npm i
 ## Build
 
 ```bash
-$ webpack
+$ npm run dist
 # then open index.html in browser
 ```

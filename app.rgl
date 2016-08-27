@@ -1,6 +1,6 @@
 <template>
 	<div class="wrapper">
-		<img src="{ logo }" alt="logo">
+		<img src="./logo.png" alt="logo">
 		Regularjs is awesome
 		<Button on-clicked="{ this.onGetStarted() }">Get Started</Button>
 	</div>
@@ -8,14 +8,10 @@
 
 <script>
 	import Button from './button';
-	import logo from './logo.png';
 
 	export default {
 		components: {
 			'Button': Button,
-		},
-		config() {
-			this.data.logo = logo;
 		},
 		onGetStarted() {
 			location.href = 'http://regularjs.github.io/guide/';
